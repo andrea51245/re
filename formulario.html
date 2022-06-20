@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practica formularios</title>
+    </head>
+    <body>
+        <table>
+    
+<form name="recibe" method="post" action="registrar.php">
+    <tr>
+        <td>
+            <label for="nombre">Nombre del estudiante</label></td>
+            <td><input type="text" name="nombre " id="nombre" value="" required></td>
+    </tr>
+    <tr>
+        <td>
+            <label for="edad">Digita tu edad</label></td>
+            <td><input type="number" name="edad " id="edad" value="" required></td>
+    </tr>
+    <tr>
+        <td><label for="numero">numero de seguridad</label></td>
+        <td><input type="text" name="numero" id="numero" value=""  pattern="[0-9]{4}"> </td> 
+    </tr>   
+    <tr>
+        <td>
+            <label for="fecha">¿Cuando naciste?</label></td>
+            <td><input type="date" name="fecha " id="fecha" value="" required></td>
+    </tr>
+    <tr>
+        <td>
+            <label for="mail">Correo electronico</label></td>
+            <td><input type="mail" name="mail" id="mail" value="" required></td>
+    </tr>
+
+    <tr>
+        <td><label for="contra">Contraeña</label></td>
+        <td><input type="password" name="contra " id="contra" value="" required > </td> 
+    </tr>    
+    <tr>
+        <td><label for="color">¿Cual es tu color favorito?</label></td>
+        <td><input type="color" name="color" id="color" value="" ></td> 
+    </tr>    
+   
+
+    <tr> 
+        <td><label for="nombre"> Comentario </label></td>
+        <td><textarea rows="5" cols="5"> escribe aqui tu comentario </textarea> </td>
+    </tr>
+
+    <tr> 
+        <td><label for="radio"> Selecina 1 </label></td>
+        <td><input type="radio" name="radio" id="radio" value="1"></td>
+    </tr>
+
+    <tr>
+        <td><label for="check"> Selecina 1 </label></td>
+        <td><input type="checkbox" name="check" id="check" value="1" ></td>
+    </tr>
+
+    <tr>
+        <td><label for="lista"> Selecina un color </label></td>
+        <td><select name="lista" >
+        <option value="negro"> Black color </option>
+        <option value="rosa"> pink color </option>
+        <option value="rojo"> red color </option>
+        </select></td>
+    </tr>
+    
+    <tr>
+        <td><label for="foto">elige una imagen</label></td>
+        <td><input type="file" name="foto" size="10" ></td>
+    </tr>
+
+<tr>
+<td><label for="registrar">¿Guardar cambios?</label></td>
+<td><input type="submit" value="registrar" ></tr></td>
+</tr>
+
+
+<tr>
+<td><label for="registrar">¿limpiar cajas?</label></td>
+<td><input type="reset" name="limpiar"  value="limpiar cajas" ></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
